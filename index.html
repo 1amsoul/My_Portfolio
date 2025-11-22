@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Aspiring System Backend Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">&lt; NISHANT &gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">_about</a></li>
+            <li><a href="#skills">_skills</a></li>
+            <li><a href="#projects">_projects</a></li>
+            <li><a href="#achievements">_achievements</a></li>
+            <li><a href="#contact">_contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <p class="intro-text">Hello, World! I am</p>
+            <h1 class="glitch-text" data-text="YOUR NAME">NISHANT</h1>
+            <h2 class="typewriter">Aspiring System Backend Engineer</h2>
+            <p class="sub-text">
+                Passionate about <span class="highlight">Distributed Systems</span>, 
+                <span class="highlight">High-Performance Java</span>, and 
+                <span class="highlight">Scalable Architecture</span>.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary-btn">View Systems</a>
+                <a href="#contact" class="btn secondary-btn">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <!-- Code Snippet Visual -->
+            <div class="code-window">
+                <div class="window-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="title">Main.java</span>
+                </div>
+                <div class="window-body">
+                    <pre><code id="codeBlock">
+class Engineer {
+  String role = "Backend Specialist";
+  String focus = "Optimization";
+  
+  void build() {
+    while(alive) {
+      code();
+      optimize();
+      deploy();
+    }
+  }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="hash">#</span> about_me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a <strong>2nd Year Computer Science Undergraduate</strong> with a razor-sharp focus on Backend Engineering. While others focus on making pixels pretty, I focus on making servers fast.
+                    </p>
+                    <p>
+                        Currently, I am deep-diving into <strong>Java Concurrency, DBMS internals, and Data Structures</strong>. My goal is to build systems that can handle millions of requests at companies like Google, Amazon, or Adobe.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">Learning</span>
+                            <span class="stat-label">DSA Solving Skill</span>
+                        </div>
+                        <!-- <div class="stat-item">
+                            <span class="stat-number">9.0</span>
+                            <span class="stat-label">Current CGPA</span>
+                        </div> -->
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Commitment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="hash">#</span> tech_stack</h2>
+            <div class="skills-grid">
+                <!-- Core -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-java"></i></div>
+                    <h3>Core Systems</h3>
+                    <p>Java (Multithreading, Collections), C++, OOPs, JVM Internals</p>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Eng.</h3>
+                    <p>REST APIs, Socket Programming, System Design (LLD), HTTP/HTTPS</p>
+                </div>
+                <!-- Data -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data & Storage</h3>
+                    <p>MySQL, Normalization, Indexing, Redis (Learning)</p>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                    <h3>Tools</h3>
+                    <p>Git/GitHub, Linux (Bash), IntelliJ IDEA, Maven</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="hash">#</span> featured_projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>🚀 Advanced URL Shortener</h3>
+                        <div class="tech-tags">
+                            <span>Java</span><span>Base62</span><span>System Design</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>A robust backend system designed to handle URL compression using the Base62 algorithm. Features include custom analytics, TTL (expiry), and collision handling. Simulates a real-world distributed ID generation system.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Implemented 0-collision Base62 Logic</li>
+                            <li><i class="fas fa-check"></i> In-memory caching mechanism</li>
+                            <li><i class="fas fa-check"></i> REST API endpoints for statistics</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-btn"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>⚡ Multithreaded Web Server (In Progress)</h3>
+                        <div class="tech-tags">
+                            <span>Java Networking</span><span>Threads</span><span>HTTP</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Built a custom HTTP server from scratch using Java Sockets. Unlike single-threaded servers, this uses a ThreadPool to handle concurrent client requests, mimicking the architecture of Apache/Nginx servers.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Handles 50+ concurrent connections</li>
+                            <li><i class="fas fa-check"></i> Custom Request/Response Parsing</li>
+                            <li><i class="fas fa-check"></i> 300% faster than single-threaded implementation</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-btn in-progress"><i class="fab fa-tools"></i> Building...</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <h3>💾 Mini-Redis (In Progress)</h3>
+                        <div class="tech-tags">
+                            <span>Data Structures</span><span>Caching</span><span>Persistence</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Designing a lightweight, in-memory key-value store. The goal is to understand how caching layers work in large-scale applications. Will support SET, GET, and TTL commands.</p>
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Fast O(1) Data Retrieval</li>
+                            <li><i class="fas fa-check"></i> Disk Persistence (Serialization)</li>
+                            <li><i class="fas fa-check"></i> Thread-safe operations</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-btn in-progress"><i class="fas fa-tools"></i> Building...</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section id="achievements" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="hash">#</span> achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="icon">🏆</div>
+                    <div class="details">
+                        <!-- <h4>LeetCode Specialist</h4> -->
+                        <!-- <p>Solved 300+ Problems. Consistent Top 15% in Weekly Contests. Focus on Graph & DP.</p> -->
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="icon">🎓</div>
+                    <div class="details">
+                        <!-- <h4>Top 5% in Class</h4> -->
+                        <!-- <p>Maintained high academic standing in Core CS subjects (OS, DBMS, Networks) during 2nd Year.</p> -->
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="icon">💻</div>
+                    <div class="details">
+                        <!-- <h4>Hackathon Finalist</h4> -->
+                        <!-- <p>Reached the final round of [Insert College/City Name] Hackathon by building a backend-first solution.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="hash">#</span> connect</h2>
+            <div class="contact-wrapper">
+                <p class="contact-text">
+                    <!-- I am actively looking for <strong>Backend Engineering Internships</strong> for Summer 2026. 
+                    If you are looking for someone who understands what happens <em>under the hood</em>, let's talk. -->
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/1amsoul" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/am1nishantsaini/" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="saininishantdbd@gmail.com" class="social-btn"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+            </div>
+            <footer>
+                <p>Built with pure HTML/CSS/JS by <span style="color:var(--accent)">Nishant</span>. &copy; 2025</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
